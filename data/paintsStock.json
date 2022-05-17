@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0001",
+        "paint": "blue",
+        "quantity": "9"
+    },
+    {
+        "id": "0002",
+        "paint": "grey",
+        "quantity": "100"
+    },
+    {
+        "id": "0003",
+        "paint": "black",
+        "quantity": "1000"
+    },
+    {
+        "id": "0004",
+        "paint": "white",
+        "quantity": "200"
+    },
+    {
+        "id": "0005",
+        "paint": "purple",
+        "quantity": "6"
+    },
+]
