@@ -3,18 +3,18 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();// load .env variables
 const paintsStock = require('./routes/paintsRoute');
-const { application } = require('express');
+
+
 
 const PORT = process.env.PORT ||  5000;
 
-//middleware
-app.use(express.json());  // adds required body (name: req.body.name) 
-// app.use(express.static('public'));  // allows to serve the images in public folder.
+//middleware- additional functionality
+app.use(express.json());  // adds required body (name: req.body) 
 app.use(cors()); // allow cross origin resource sharing
 
 
 // home route
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Welcome to server API')
 });
 
@@ -22,5 +22,5 @@ app.use('/', (req, res) => {
 app.use('/paints', paintsStock);
 
 app.listen(PORT, () => {
-    console.log(`Hello! My server is listening on port ${PORT}`)
+    console.log(`Hello! Listening on port ${PORT}`)
 });
