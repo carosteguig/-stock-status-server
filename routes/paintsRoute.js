@@ -13,15 +13,15 @@ router.get('/', (req, res) => {
     });
 });
 
-// getting single paint by id
-router.get('/:id', (req, res) => {
+// getting single paint by colour
+router.get('/:colour', (req, res) => {
     //loading and reading json file in utf8 format
     fs.readFile('./data/paintsStock.json', 'utf8', (err, data) => { 
         // parsing json file so it is readable
         const paintsData = JSON.parse(data);
         // using array method to find an specific paint by looking for the id
         const singlePaint = paintsData.find(
-            (paint) => paint.id === req.params.id
+            (paint) => paint.colour === req.params.colour
         );
         if (singlePaint) {
             res.json(singlePaint);

@@ -1,27 +1,27 @@
 [
     {
         "id": "0001",
-        "paint": "blue",
+        "colour": "blue",
         "quantity": "9"
     },
     {
         "id": "0002",
-        "paint": "grey",
+        "colour": "grey",
         "quantity": "100"
     },
     {
         "id": "0003",
-        "paint": "black",
-        "quantity": "1000"
+        "colour": "black",
+        "quantity": "0"
     },
     {
         "id": "0004",
-        "paint": "white",
+        "colour": "white",
         "quantity": "200"
     },
     {
         "id": "0005",
-        "paint": "purple",
+        "colour": "purple",
         "quantity": "6"
     }
 ]
